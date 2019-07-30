@@ -77,11 +77,6 @@
           "name": "request",
           "version": "2.88.0",
           "language": "javascript"
-        },
-        "mysql": {
-          "name": "mysql",
-          "version": "2.17.1",
-          "language": "javascript"
         }
       }
     }
@@ -93,7 +88,7 @@
     "projectRegion": "us-east1",
     "platform": "GCP",
     "platformRegions": {},
-    "lastSave": 1564485390534
+    "lastSave": 1564485711673
   },
   "VCS_STATE": {
     "provider": "GitHub",
