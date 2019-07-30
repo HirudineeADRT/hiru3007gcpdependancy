@@ -1,0 +1,90 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "52ee1fb0-1944-4623-afc0-846551e3f599": {
+        "id": "52ee1fb0-1944-4623-afc0-846551e3f599",
+        "parent": null,
+        "name": "hiru3007gcpdependancy",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "8b1eae8b-fc2c-406a-b31e-995073b8b29e"
+        ],
+        "isRemovable": false,
+        "filePath": "hiru3007gcpdependancy"
+      },
+      "8b1eae8b-fc2c-406a-b31e-995073b8b29e": {
+        "id": "8b1eae8b-fc2c-406a-b31e-995073b8b29e",
+        "parent": "52ee1fb0-1944-4623-afc0-846551e3f599",
+        "name": "function.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "hiru3007gcpdependancy/function.js",
+        "code": "exports.handler = function(request, response) {\n    \n    response.send({\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8",
+          "timeout": 60,
+          "memory": 128,
+          "triggerType": 0
+        },
+        "triggers": [
+          {
+            "resourceName": "http-trigger",
+            "config": {}
+          }
+        ]
+      },
+      "ef914abf-9e95-4ed1-92d1-f79a428024d9": {
+        "id": "ef914abf-9e95-4ed1-92d1-f79a428024d9",
+        "parent": null,
+        "name": "index.js",
+        "type": "JS_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": false,
+        "filePath": "index.js",
+        "code": "// This file is used to register all your cloud functions in GCP.\n// DO NOT EDIT/DELETE THIS, UNLESS YOU KNOW WHAT YOU ARE DOING.\n\nexports.hiru3007gcpdependancyfunction = require(\"./hiru3007gcpdependancy/function.js\").handler;"
+      }
+    },
+    "deletedFiles": [],
+    "rootNode": "52ee1fb0-1944-4623-afc0-846551e3f599",
+    "openFiles": [
+      "8b1eae8b-fc2c-406a-b31e-995073b8b29e"
+    ],
+    "currentFileId": "8b1eae8b-fc2c-406a-b31e-995073b8b29e",
+    "resources": {
+      "http-trigger": {
+        "name": "http-trigger",
+        "type": "http-trigger",
+        "config": {}
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": {}
+    },
+    "envVariables": [],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "hiru3007gcpdependancy",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east1",
+    "platform": "GCP",
+    "platformRegions": {},
+    "lastSave": 1564474840562
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "hiru3007gcpdependancy",
+      "url": "https://github.com/HirudineeADRT/hiru3007gcpdependancy",
+      "branches": []
+    }
+  }
+}
