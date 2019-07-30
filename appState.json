@@ -22,7 +22,7 @@
         "children": [],
         "isRemovable": true,
         "filePath": "hiru3007gcpdependancy/function.js",
-        "code": "let faker = require(\"faker\");\nexports.handler = function(request, response) {\n    \n    response.send({\"message\": faker.internet.userName()});\n}",
+        "code": "let faker = require(\"faker\");\nlet request = require(\"request\");\nexports.handler = function(request, response) {\n    \n    request(\"http://www.google.com\", (error, response, body) => {\n     console.log(\"error:\", error);\n     console.log(\"statusCode:\", response && response.statusCode);\n     console.log(\"body:\", body);\n    });\n    response.send({\"message\": faker.internet.userName()});\n}",
         "config": {
           "runtime": "nodejs8",
           "timeout": 60,
@@ -72,6 +72,11 @@
           "name": "faker",
           "version": "4.1.0",
           "language": "javascript"
+        },
+        "request": {
+          "name": "request",
+          "version": "2.88.0",
+          "language": "javascript"
         }
       }
     }
@@ -83,7 +88,7 @@
     "projectRegion": "us-east1",
     "platform": "GCP",
     "platformRegions": {},
-    "lastSave": 1564475200649
+    "lastSave": 1564475668362
   },
   "VCS_STATE": {
     "provider": "GitHub",

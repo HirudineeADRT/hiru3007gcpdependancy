@@ -2,7 +2,8 @@
   "name": "hiru3007gcpdependancy",
   "version": "1.0.0",
   "dependencies": {
-    "faker": "4.1.0"
+    "faker": "4.1.0",
+    "request": "2.88.0"
   },
   "devDependencies": {}
 }
