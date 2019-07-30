@@ -22,7 +22,7 @@
         "children": [],
         "isRemovable": true,
         "filePath": "hiru3007gcpdependancy/function.js",
-        "code": "exports.handler = function(request, response) {\n    \n    response.send({\"message\": \"Successfully executed\"});\n}",
+        "code": "let faker = require(\"faker\");\nexports.handler = function(request, response) {\n    \n    response.send({\"message\": faker.internet.userName()});\n}",
         "config": {
           "runtime": "nodejs8",
           "timeout": 60,
@@ -67,7 +67,13 @@
     },
     "envVariables": [],
     "packageJSON": {
-      "dependencies": {}
+      "dependencies": {
+        "faker": {
+          "name": "faker",
+          "version": "4.1.0",
+          "language": "javascript"
+        }
+      }
     }
   },
   "PROJECT_META": {
@@ -77,14 +83,19 @@
     "projectRegion": "us-east1",
     "platform": "GCP",
     "platformRegions": {},
-    "lastSave": 1564474840562
+    "lastSave": 1564475200649
   },
   "VCS_STATE": {
     "provider": "GitHub",
     "repo": {
       "name": "hiru3007gcpdependancy",
       "url": "https://github.com/HirudineeADRT/hiru3007gcpdependancy",
-      "branches": []
+      "branches": [
+        {
+          "name": "master",
+          "hash": "1ba206e2a4cec6940771189e4396c005000d28dd"
+        }
+      ]
     }
   }
 }
