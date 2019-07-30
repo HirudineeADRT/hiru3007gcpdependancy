@@ -1,5 +1,5 @@
 let faker = require("faker");
-let requestim = require("request");
+let requestima = require("request");
 exports.handler = function (request, response) {
 
     requestim("http://www.google.com", (error, response, body) => {
